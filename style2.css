@@ -2432,3 +2432,98 @@ textarea.input-rounded { border-radius: 20px; resize: vertical; min-height: 100p
     grid-template-columns: 1fr;
   }
 }
+
+/* --- Premium CTA Banner --- */
+.premium-cta-banner {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta-banner-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  transform: scale(1.05);
+  transition: transform 10s ease;
+}
+.premium-cta-banner:hover .cta-banner-bg {
+  transform: scale(1);
+}
+.cta-banner-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(20, 30, 40, 0.85) 0%, rgba(42, 75, 58, 0.85) 100%);
+  z-index: 1;
+}
+.cta-banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+}
+.cta-banner-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(230, 194, 122, 0.3);
+  border-radius: 30px;
+  padding: 4rem 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+.premium-badge-gold {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: rgba(230, 194, 122, 0.15);
+  color: #E6C27A;
+  border: 1px solid rgba(230, 194, 122, 0.5);
+  margin-bottom: 1.5rem;
+}
+.cta-banner-title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.cta-banner-desc {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  background-color: #E6C27A;
+  color: #1a2a20;
+  box-shadow: 0 10px 25px rgba(230, 194, 122, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-gold:hover {
+  background-color: #d4ae60;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(230, 194, 122, 0.5);
+}
