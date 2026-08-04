@@ -182,18 +182,40 @@
       <div class="cta-banner-overlay"></div>
       
       <div class="container-1700 cta-banner-content">
-        <div class="cta-banner-card">
-          <div class="premium-badge-gold">Get In Touch</div>
-          <h2 class="cta-banner-title">Contact Us</h2>
-          <div class="hero-divider" style="margin: 1.5rem auto; justify-content: center;">
-            <span class="line" style="width: 40px; background: rgba(230, 194, 122, 0.5);"></span>
-            <svg viewBox="0 0 24 24" class="heart-icon" fill="#E6C27A" style="width: 16px; height: 16px;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-            <span class="line" style="width: 40px; background: rgba(230, 194, 122, 0.5);"></span>
+        <div class="cta-banner-split-card">
+          <div class="cta-banner-left">
+            <div class="premium-badge-gold" style="margin-bottom: 2rem;">Get In Touch</div>
+            <h2 class="cta-banner-title" style="text-align: left;">Contact Us</h2>
+            <div class="hero-divider" style="margin: 1.5rem 0; justify-content: flex-start;">
+              <span class="line" style="width: 40px; background: rgba(230, 194, 122, 0.5);"></span>
+              <svg viewBox="0 0 24 24" class="heart-icon" fill="#E6C27A" style="width: 16px; height: 16px;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span class="line" style="width: 40px; background: rgba(230, 194, 122, 0.5);"></span>
+            </div>
+            <p class="cta-banner-desc" style="text-align: left; margin-left: 0;">
+              Reach out with questions about our intended home, services, and development timeline. We are here to assist your family.
+            </p>
+            <div style="text-align: left; margin-top: 2rem;">
+              <a href="tel:414-455-5899" class="btn-gold magnetic">Call 414-455-5899</a>
+            </div>
           </div>
-          <p class="cta-banner-desc">
-            Reach out with questions about our intended home, services, and development timeline. We are here to assist your family.
-          </p>
-          <a href="contact.html" class="btn-gold magnetic" style="margin-top: 20px;">Contact Us Now</a>
+          
+          <div class="cta-banner-right">
+            <form class="premium-inline-form" action="mailto:havenspringllc@gmail.com?subject=New%20HavenSpring%20Website%20Inquiry" method="post" enctype="text/plain">
+              <div class="form-row">
+                <input type="text" name="name" placeholder="Full Name *" required>
+                <input type="tel" name="phone" placeholder="Phone Number *" required>
+              </div>
+              <input type="email" name="email" placeholder="Email Address *" required>
+              <textarea name="message" rows="4" placeholder="How can we assist your family? *" required></textarea>
+              
+              <div class="form-checkbox">
+                <input type="checkbox" id="sms_consent_cta" name="sms_consent" value="yes">
+                <label for="sms_consent_cta">By checking this box, you agree to receive SMS messages from HavenSpring LLC related to inquiries, services, or updates. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance.</label>
+              </div>
+              
+              <button type="submit" class="btn-primary magnetic" style="width: 100%; border-radius: 8px; margin-top: 10px; padding: 15px 0; font-size: 1.1rem;">Send Inquiry Message</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>

@@ -168,14 +168,36 @@
       <div class="cta-banner-overlay"></div>
       
       <div class="container cta-banner-content">
-        <div class="cta-banner-card">
-          <div class="premium-badge-gold">Get In Touch</div>
-          <h2 class="cta-banner-title">Contact Us</h2>
-          <div class="section-title-divider" style="margin: 1.5rem auto;"></div>
-          <p class="cta-banner-desc">
-            Reach out with questions about our intended home, services, and development timeline. We are here to assist your family.
-          </p>
-          <a href="contact.html" class="btn btn-chartreuse" style="margin-top: 20px; font-size: 1.2rem; padding: 15px 40px;">Contact Us Now</a>
+        <div class="cta-banner-split-card">
+          <div class="cta-banner-left">
+            <div class="premium-badge-gold" style="margin-bottom: 2rem;">Get In Touch</div>
+            <h2 class="cta-banner-title" style="text-align: left;">Contact Us</h2>
+            <div class="section-title-divider" style="margin: 1.5rem 0; justify-content: flex-start;"></div>
+            <p class="cta-banner-desc" style="text-align: left; margin-left: 0;">
+              Reach out with questions about our intended home, services, and development timeline. We are here to assist your family.
+            </p>
+            <div style="text-align: left; margin-top: 2rem;">
+              <a href="tel:414-455-5899" class="btn btn-chartreuse magnetic">Call 414-455-5899</a>
+            </div>
+          </div>
+          
+          <div class="cta-banner-right">
+            <form class="premium-inline-form" action="mailto:havenspringllc@gmail.com?subject=New%20HavenSpring%20Website%20Inquiry" method="post" enctype="text/plain">
+              <div class="form-row">
+                <input type="text" name="name" placeholder="Full Name *" required>
+                <input type="tel" name="phone" placeholder="Phone Number *" required>
+              </div>
+              <input type="email" name="email" placeholder="Email Address *" required>
+              <textarea name="message" rows="4" placeholder="How can we assist your family? *" required></textarea>
+              
+              <div class="form-checkbox">
+                <input type="checkbox" id="sms_consent_cta_1" name="sms_consent" value="yes">
+                <label for="sms_consent_cta_1">By checking this box, you agree to receive SMS messages from HavenSpring LLC related to inquiries, services, or updates. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance.</label>
+              </div>
+              
+              <button type="submit" class="btn btn-chartreuse magnetic" style="width: 100%; border-radius: 8px; margin-top: 10px; padding: 15px 0; font-size: 1.1rem; border: none; cursor: pointer;">Send Inquiry Message</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
