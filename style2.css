@@ -2267,7 +2267,7 @@ textarea.input-rounded { border-radius: 20px; resize: vertical; min-height: 100p
   color: var(--color-accent-gold) !important;
   font-style: italic;
 }
-.hero-description { font-size: 18px !important; font-weight: 300 !important; color: #fff !important; line-height: 1.8; letter-spacing: 0.5px; max-width: 1000px; margin: 0 auto; opacity: 1; }
+.hero-description { font-size: 18px !important; font-weight: 300 !important; color: #fff !important; line-height: 1.8; letter-spacing: 0.5px; max-width: 1400px; margin: 0 auto; opacity: 1; }
 
 
 
