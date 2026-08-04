@@ -2211,3 +2211,6 @@ textarea.form-control {
 .cta-banner-desc {
   color: #4a4a4a !important;
 }
+.premium-cta-banner {
+  padding-bottom: 0 !important;
+}
