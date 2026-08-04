@@ -2686,3 +2686,9 @@ textarea.input-rounded { border-radius: 20px; resize: vertical; min-height: 100p
   color: #ffffff !important;
   margin-bottom: 1rem !important;
 }
+.cta-banner-title {
+  color: #3a523b !important;
+}
+.cta-banner-desc {
+  color: #4a4a4a !important;
+}
