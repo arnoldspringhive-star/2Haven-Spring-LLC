@@ -2201,3 +2201,12 @@ textarea.form-control {
     text-align: center;
   }
 }
+
+/* --- INCREASE BRAND LOGO SIZE IN FOOTER --- */
+.footer-brand p:first-child {
+  font-size: 40px !important;
+  font-weight: 700 !important;
+  font-family: var(--font-heading, 'Playfair Display', serif) !important;
+  color: #ffffff !important;
+  margin-bottom: 1rem !important;
+}
