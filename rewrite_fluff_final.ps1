@@ -1,0 +1,7 @@
+ = Get-Content 'service-health.html' -Raw;  =  -replace 'and ensure that', 'and aim to verify that'; Set-Content 'service-health.html' 
+ = Get-Content 'index2.html' -Raw;  =  -replace 'We provide ongoing support. We ensure total satisfaction.', 'Support is planned to be ongoing. Our focus is on resident well-being.'; Set-Content 'index2.html' 
+ = Get-Content 'index.html' -Raw;  =  -replace 'to ensure comfort', 'to promote comfort';  =  -replace 'We are committed to', 'Our goal is to'; Set-Content 'index.html' 
+ = Get-Content 'service-personal-care.html' -Raw;  =  -replace 'we ensure that', 'we aim to support that';  =  -replace 'to ensure cleanliness', 'to support cleanliness'; Set-Content 'service-personal-care.html' 
+ = Get-Content 'service-planning.html' -Raw;  =  -replace 'to ensure evolving needs', 'to support evolving needs'; Set-Content 'service-planning.html' 
+ = Get-Content 'admissions.html' -Raw;  =  -replace 'to ensure that', 'to verify that'; Set-Content 'admissions.html' 
+ = Get-Content 'about.html' -Raw;  =  -replace 'to ensure safe placement', 'to determine if safe placement is possible'; Set-Content 'about.html' 
