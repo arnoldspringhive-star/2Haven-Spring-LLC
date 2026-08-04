@@ -2232,7 +2232,7 @@ textarea.input-rounded { border-radius: 20px; resize: vertical; min-height: 100p
   margin-bottom: 1rem;
 }
 .reference-process-card p {
-  font-size: 1rem;
+  font-size: 18px;
   color: var(--color-text-light);
   line-height: 1.6;
 }
