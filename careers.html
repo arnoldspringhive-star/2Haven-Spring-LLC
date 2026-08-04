@@ -106,44 +106,49 @@
                   <input type="text" name="Experience" class="input-rounded" placeholder="Years of Experience" required>
                 </div>
               </div>
-              <div class="form-group">
-                <input type="text" name="Certifications" class="input-rounded" placeholder="Certifications (e.g., CNA, CPR, First Aid)">
-              </div>
-              <div class="form-group">
-                <label style="display:block; margin-bottom: 5px; font-size: 0.9rem; color: #555;">Resume Upload (Optional limit 5MB)</label>
-                <input type="file" name="Resume" class="input-rounded" accept=".pdf,.doc,.docx" style="padding: 10px;">
+              <div class="form-row" style="align-items: center;">
+                <div class="form-group">
+                  <input type="text" name="Certifications" class="input-rounded" placeholder="Certifications (e.g., CNA, CPR, First Aid)">
+                </div>
+                <div class="form-group">
+                  <input type="file" name="Resume" class="input-rounded" accept=".pdf,.doc,.docx">
+                </div>
               </div>
               
-              <div class="form-group" style="display: flex; align-items: start; gap: 12px; font-size: 0.95rem; color: #4b5563; margin-top: 1.5rem;">
-                <input type="checkbox" name="WorkAuthorization" id="workAuth" required style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer;">
-                <label for="workAuth" style="cursor: pointer;">I am authorized to work in the United States.</label>
-              </div>
-              <div class="form-group" style="display: flex; align-items: start; gap: 12px; font-size: 0.95rem; color: #4b5563; margin-top: 1rem;">
-                <input type="checkbox" name="BackgroundCheck" id="backgroundCheck" required style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer;">
-                <label for="backgroundCheck" style="cursor: pointer;">I agree to submit to a background check as part of the hiring process.</label>
-              </div>
-              <div class="form-group" style="margin-top: 1.5rem;">
-                <input type="text" name="Signature" class="input-rounded" placeholder="Electronic Signature (Type Full Name)" required>
-              </div>
-
-              <!-- CAPTCHA Placeholder -->
-              <div class="form-group captcha-placeholder" style="background: #ffffff; padding: 15px 20px; border-radius: 4px; border: 1px solid #d3d3d3; display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; box-shadow: 0 0 4px 1px rgba(0,0,0,0.08); background-color: #fafafa; max-width: 300px;">
-                <div style="display: flex; align-items: center; gap: 12px;">
-                  <input type="checkbox" style="width: 28px; height: 28px; cursor: pointer; accent-color: var(--color-primary); border: 2px solid #c1c1c1; border-radius: 2px;" required>
-                  <span style="font-size: 0.9rem; color: #555; font-family: Roboto, sans-serif;">I'm not a robot</span>
+              <div class="form-row" style="align-items: start; margin-top: 1rem;">
+                <div class="form-group" style="display: flex; align-items: start; gap: 12px; font-size: 0.95rem; color: #4b5563;">
+                  <input type="checkbox" name="WorkAuthorization" id="workAuth" required style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer;">
+                  <label for="workAuth" style="cursor: pointer;">I am authorized to work in the United States.</label>
                 </div>
-                <div style="display: flex; flex-direction: column; align-items: center;">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/200px-RecaptchaLogo.svg.png" alt="reCAPTCHA" style="height: 24px; opacity: 0.8; margin-bottom: 2px;">
-                  <span style="font-size: 0.6rem; color: #999;">reCAPTCHA</span>
+                <div class="form-group" style="display: flex; align-items: start; gap: 12px; font-size: 0.95rem; color: #4b5563;">
+                  <input type="checkbox" name="BackgroundCheck" id="backgroundCheck" required style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer;">
+                  <label for="backgroundCheck" style="cursor: pointer;">I agree to submit to a background check as part of the hiring process.</label>
                 </div>
               </div>
 
-              <div class="form-group checkbox-group" style="display: flex; align-items: start; gap: 12px; margin-top: 1.5rem; margin-bottom: 2rem;">
-                <input type="checkbox" id="sms_consent" name="sms_consent" value="yes" style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer;">
+              <div class="form-row" style="align-items: center; margin-top: 1rem;">
+                <div class="form-group">
+                  <input type="text" name="Signature" class="input-rounded" placeholder="Electronic Signature (Type Full Name)" required>
+                </div>
+                <!-- CAPTCHA Placeholder -->
+                <div class="form-group captcha-placeholder" style="background: #ffffff; padding: 10px 15px; border-radius: 4px; border: 1px solid #d3d3d3; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 0 4px 1px rgba(0,0,0,0.04); background-color: #fafafa; max-width: 100%;">
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" style="width: 24px; height: 24px; cursor: pointer; accent-color: var(--color-primary); border: 2px solid #c1c1c1; border-radius: 2px;" required>
+                    <span style="font-size: 0.85rem; color: #555; font-family: Roboto, sans-serif;">I'm not a robot</span>
+                  </div>
+                  <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/200px-RecaptchaLogo.svg.png" alt="reCAPTCHA" style="height: 20px; opacity: 0.8; margin-bottom: 2px;">
+                    <span style="font-size: 0.55rem; color: #999;">reCAPTCHA</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group checkbox-group" style="display: flex; align-items: start; gap: 12px; margin-top: 1rem; margin-bottom: 2rem;">
+                <input type="checkbox" id="sms_consent" name="sms_consent" value="yes" style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer; flex-shrink: 0;">
                 <label for="sms_consent" style="font-size: 0.85em; color: #6b7280; line-height: 1.5; cursor: pointer;">By checking this box, you agree to receive SMS messages from HavenSpring LLC related to inquiries, services, or updates. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance.</label>
               </div>
 
-              <button type="submit" class="btn-primary magnetic" style="width: 100%; margin-top: 1rem;">Submit Application</button>
+              <button type="submit" class="btn-primary magnetic" style="width: 100%;">Submit Application</button>
             </form>
           </div>
         </div>
