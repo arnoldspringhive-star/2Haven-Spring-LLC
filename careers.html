@@ -114,25 +114,33 @@
                 <input type="file" name="Resume" class="input-rounded" accept=".pdf,.doc,.docx" style="padding: 10px;">
               </div>
               
-              <div class="form-group" style="display: flex; align-items: start; gap: 10px; font-size: 0.9rem; color: #555; margin-top: 15px;">
-                <input type="checkbox" name="WorkAuthorization" id="workAuth" required style="margin-top: 4px;">
-                <label for="workAuth">I am authorized to work in the United States.</label>
+              <div class="form-group" style="display: flex; align-items: start; gap: 12px; font-size: 0.95rem; color: #4b5563; margin-top: 1.5rem; background: #f9fafb; padding: 15px; border-radius: 8px; border: 1px solid #e5e7eb;">
+                <input type="checkbox" name="WorkAuthorization" id="workAuth" required style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer;">
+                <label for="workAuth" style="cursor: pointer;">I am authorized to work in the United States.</label>
               </div>
-              <div class="form-group" style="display: flex; align-items: start; gap: 10px; font-size: 0.9rem; color: #555;">
-                <input type="checkbox" name="BackgroundCheck" id="backgroundCheck" required style="margin-top: 4px;">
-                <label for="backgroundCheck">I agree to submit to a background check as part of the hiring process.</label>
+              <div class="form-group" style="display: flex; align-items: start; gap: 12px; font-size: 0.95rem; color: #4b5563; background: #f9fafb; padding: 15px; border-radius: 8px; border: 1px solid #e5e7eb;">
+                <input type="checkbox" name="BackgroundCheck" id="backgroundCheck" required style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer;">
+                <label for="backgroundCheck" style="cursor: pointer;">I agree to submit to a background check as part of the hiring process.</label>
               </div>
-              <div class="form-group" style="margin-top: 15px;">
+              <div class="form-group" style="margin-top: 1.5rem;">
                 <input type="text" name="Signature" class="input-rounded" placeholder="Electronic Signature (Type Full Name)" required>
               </div>
 
               <!-- CAPTCHA Placeholder -->
-              <div class="form-group captcha-placeholder" style="background: #f0f0f0; padding: 15px; border-radius: 8px; text-align: center; border: 1px dashed #ccc; margin-top: 15px;">
-                <span>[CAPTCHA Spam Protection]</span>
+              <div class="form-group captcha-placeholder" style="background: #ffffff; padding: 15px 20px; border-radius: 4px; border: 1px solid #d3d3d3; display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; box-shadow: 0 0 4px 1px rgba(0,0,0,0.08); background-color: #fafafa; max-width: 300px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <input type="checkbox" style="width: 28px; height: 28px; cursor: pointer; accent-color: var(--color-primary); border: 2px solid #c1c1c1; border-radius: 2px;" required>
+                  <span style="font-size: 0.9rem; color: #555; font-family: Roboto, sans-serif;">I'm not a robot</span>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/200px-RecaptchaLogo.svg.png" alt="reCAPTCHA" style="height: 24px; opacity: 0.8; margin-bottom: 2px;">
+                  <span style="font-size: 0.6rem; color: #999;">reCAPTCHA</span>
+                </div>
               </div>
-              <div class="form-group checkbox-group" style="margin-top: 15px; margin-bottom: 15px;">
-                <input type="checkbox" id="sms_consent" name="sms_consent" value="yes">
-                <label for="sms_consent" style="font-size: 0.85em;">By checking this box, you agree to receive SMS messages from HavenSpring LLC related to inquiries, services, or updates. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance.</label>
+
+              <div class="form-group checkbox-group" style="display: flex; align-items: start; gap: 12px; margin-top: 1.5rem; margin-bottom: 2rem;">
+                <input type="checkbox" id="sms_consent" name="sms_consent" value="yes" style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer;">
+                <label for="sms_consent" style="font-size: 0.85em; color: #6b7280; line-height: 1.5; cursor: pointer;">By checking this box, you agree to receive SMS messages from HavenSpring LLC related to inquiries, services, or updates. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance.</label>
               </div>
 
               <button type="submit" class="btn-primary magnetic" style="width: 100%; margin-top: 1rem;">Submit Application</button>
