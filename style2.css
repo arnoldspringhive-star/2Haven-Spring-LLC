@@ -97,7 +97,11 @@ img { max-width: 100%; height: auto; display: block; }
 .logo svg { width: 40px; height: 40px; }
 .nav-menu { display: flex; gap: 2rem; }
 .nav-menu a { font-size: 16px; font-weight: 500; color: var(--color-text-light); transition: var(--transition); }
-.nav-menu a:hover, .nav-menu a.active { color: var(--color-primary); }
+.nav-menu a:hover, .nav-menu a.active { 
+  color: var(--color-primary); 
+  font-family: var(--font-body) !important;
+  font-weight: 500 !important;
+}
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; z-index: 1001; }
 .hamburger span { width: 25px; height: 3px; background: var(--color-primary); border-radius: 3px; transition: var(--transition); }
 
