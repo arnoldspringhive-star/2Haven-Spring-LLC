@@ -1,4 +1,4 @@
-﻿/* 
+/* 
 ========================================================================
    HavenSpring LLC - Custom Stylesheet
    Theme: Calming, Peaceful, Professional, Warm Healthcare/Homecare
@@ -2052,15 +2052,10 @@ textarea.form-control {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(230, 194, 122, 0.3);
-  border-radius: 30px;
-  padding: 4rem;
-  max-width: 1100px;
+  background: transparent;
+  padding: 2rem 0;
+  max-width: 1400px;
   margin: 0 auto;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
   align-items: center;
 }
 .cta-banner-left {
