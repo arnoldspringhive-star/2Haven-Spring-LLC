@@ -60,53 +60,43 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Careers Form AJAX Submission & Validation
+  // Check for successful FormSubmit redirect
+  if (window.location.search.includes('success=true')) {
+    const formContainer = document.getElementById('application-form-container');
+    const successMsg = document.getElementById('application-success-msg');
+    
+    if (formContainer && successMsg) {
+      formContainer.style.display = 'none';
+      successMsg.style.display = 'block';
+      // Clean up the URL
+      window.history.replaceState({}, document.title, window.location.pathname);
+      setTimeout(() => {
+        successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    }
+  }
+
+  // Careers Form Native Submission with dynamic redirect
   const careersForm = document.getElementById('careersForm');
   if (careersForm) {
     careersForm.addEventListener('submit', function(e) {
-      e.preventDefault(); // Prevent standard redirect
-      
       const submitBtn = document.getElementById('submitBtn');
-      const originalText = submitBtn.innerText;
-      
-      // Inline validation for ReCAPTCHA
-      const recaptchaResponse = grecaptcha ? grecaptcha.getResponse() : '';
-      if (recaptchaResponse.length === 0) {
-        alert('Please complete the reCAPTCHA verification before submitting.');
-        return;
+      if(submitBtn) {
+        submitBtn.innerText = 'Redirecting to Security Check...';
+        submitBtn.disabled = true;
       }
       
-      // Show loading state
-      submitBtn.innerText = 'Submitting Application...';
-      submitBtn.disabled = true;
-      
-      const formData = new FormData(careersForm);
-      
-      fetch(careersForm.action, {
-        method: 'POST',
-        body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
-      })
-      .then(response => {
-        if (response.ok) {
-          // Hide form and show success message
-          document.getElementById('application-form-container').style.display = 'none';
-          document.getElementById('application-success-msg').style.display = 'block';
-          
-          // Optionally scroll to top of the success message
-          document.getElementById('application-success-msg').scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-          throw new Error('Form submission failed');
-        }
-      })
-      .catch(error => {
-        console.error('Error submitting form:', error);
-        alert('There was a problem submitting your application. Please try again later or contact us directly.');
-        submitBtn.innerText = originalText;
-        submitBtn.disabled = false;
-      });
+      // Inject the _next parameter for FormSubmit to redirect back to this page with success=true
+      let nextInput = careersForm.querySelector('input[name="_next"]');
+      if (!nextInput) {
+        nextInput = document.createElement('input');
+        nextInput.type = 'hidden';
+        nextInput.name = '_next';
+        careersForm.appendChild(nextInput);
+      }
+      // Use absolute URL for FormSubmit _next parameter
+      const absoluteUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?success=true";
+      nextInput.value = absoluteUrl;
     });
   }
 });

@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style2.css?v=5">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -120,7 +119,6 @@
             <!-- AJAX form handler integrated in script2.js -->
             <form id="careersForm" action="https://formsubmit.co/careers@havenspring.com" method="POST" enctype="multipart/form-data">
               <input type="hidden" name="_subject" value="New HavenSpring Employment Application">
-              <input type="hidden" name="_captcha" value="false"> <!-- Disabling formsubmit default captcha because we use AJAX and Google ReCaptcha -->
 
               <fieldset style="border: none; margin-bottom: 2rem; padding: 0;">
                 <legend class="form-section-title">Personal Information</legend>
@@ -199,11 +197,6 @@
                   <div class="form-group" style="flex: 1;">
                     <label for="Signature" class="sr-only">Electronic Signature</label>
                     <input type="text" id="Signature" name="Signature" class="input-rounded" placeholder="Electronic Signature (Type Full Name) *" required aria-required="true">
-                  </div>
-                  
-                  <!-- Proper Google reCAPTCHA v2 Widget (using official test key) -->
-                  <div class="form-group" style="flex: 1;">
-                    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
                   </div>
                 </div>
               </fieldset>
