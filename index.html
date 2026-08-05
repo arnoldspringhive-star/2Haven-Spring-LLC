@@ -189,9 +189,8 @@
               <input type="email" name="email" placeholder="Email Address *" required>
               <textarea name="message" rows="4" placeholder="How can we assist your family? *" required></textarea>
               
-              <div class="form-group captcha-placeholder" style="background: #f0f0f0; padding: 15px; border-radius: 8px; text-align: center; border: 1px dashed #ccc; margin-top: 15px; margin-bottom: 15px;">
-                <span>[CAPTCHA Spam Protection]</span>
-              </div>
+              <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+              <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" style="margin-top: 15px; margin-bottom: 15px;"></div>
               
               <div class="form-checkbox">
                 <input type="checkbox" id="sms_consent_cta_1" name="sms_consent" value="yes">
