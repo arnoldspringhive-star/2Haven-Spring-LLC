@@ -58,3 +58,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Careers Form AJAX Submission & Validation
+  const careersForm = document.getElementById('careersForm');
+  if (careersForm) {
+    careersForm.addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent standard redirect
+      
+      const submitBtn = document.getElementById('submitBtn');
+      const originalText = submitBtn.innerText;
+      
+      // Inline validation for ReCAPTCHA
+      const recaptchaResponse = grecaptcha ? grecaptcha.getResponse() : '';
+      if (recaptchaResponse.length === 0) {
+        alert('Please complete the reCAPTCHA verification before submitting.');
+        return;
+      }
+      
+      // Show loading state
+      submitBtn.innerText = 'Submitting Application...';
+      submitBtn.disabled = true;
+      
+      const formData = new FormData(careersForm);
+      
+      fetch(careersForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          // Hide form and show success message
+          document.getElementById('application-form-container').style.display = 'none';
+          document.getElementById('application-success-msg').style.display = 'block';
+          
+          // Optionally scroll to top of the success message
+          document.getElementById('application-success-msg').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        alert('There was a problem submitting your application. Please try again later or contact us directly.');
+        submitBtn.innerText = originalText;
+        submitBtn.disabled = false;
+      });
+    });
+  }
+});

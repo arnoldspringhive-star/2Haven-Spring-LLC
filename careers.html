@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style2.css?v=3">
+  <link rel="stylesheet" href="style2.css?v=5">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -46,7 +47,7 @@
     </div>
   </header>
 
-  <main>
+    <main>
     <!-- TOP HERO SECTION -->
     <header class="about-immersive-hero" style="background-image: url('assets/hero_slide_3.png');">
       <div class="about-immersive-content reveal">
@@ -58,108 +59,165 @@
       </div>
     </header>
 
-    <!-- CAREERS SECTION -->
-    <section id="careers" class="mobile-pad-50 section-padding bg-warm-white">
+    <!-- NEW: ABOUT US & WHY JOIN US -->
+    <section class="mobile-pad-50 section-padding bg-warm-white" style="padding-bottom: 2rem !important;">
       <div class="container-1700">
-        <!-- Separated Contact Info Cards -->
-        <div class="careers-contact-cards reveal" style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 3rem; flex-wrap: wrap;">
-          <div class="contact-card" style="background: #fff; padding: 2rem 3rem; border-radius: 20px; box-shadow: var(--shadow-soft); display: flex; align-items: center; gap: 1.5rem; min-width: 320px;">
-            <div class="contact-icon" style="width: 50px; height: 50px; border-radius: 50%; background: #F4F7F6; display: flex; align-items: center; justify-content: center; color: var(--color-primary); flex-shrink: 0;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 24px; height: 24px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            </div>
-            <div>
-              <strong style="color: var(--color-primary); font-size: 1.1rem; font-family: var(--font-heading);">HR Phone</strong><br>
-              <span style="color: var(--color-text-light); font-size: 1rem;">414-455-5899</span>
-            </div>
+        <div class="careers-intro-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1200px; margin: 0 auto; align-items: center;">
+          <div class="reveal">
+            <h2 class="section-title text-left" style="font-size: 2.2rem; margin-bottom: 1.5rem;">About HavenSpring LLC</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 1.5rem;">
+              HavenSpring LLC is a premier adult residential care provider committed to delivering person-centered care in a safe, nurturing environment. Our mission is to foster independence, dignity, and a true sense of belonging for every resident.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--color-text-light);">
+              We believe that exceptional care starts with an exceptional team. We cultivate a supportive workplace culture where our staff is valued, heard, and empowered to make a meaningful difference.
+            </p>
           </div>
-          <div class="contact-card" style="background: #fff; padding: 2rem 3rem; border-radius: 20px; box-shadow: var(--shadow-soft); display: flex; align-items: center; gap: 1.5rem; min-width: 320px;">
-            <div class="contact-icon" style="width: 50px; height: 50px; border-radius: 50%; background: #F4F7F6; display: flex; align-items: center; justify-content: center; color: var(--color-primary); flex-shrink: 0;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 24px; height: 24px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </div>
-            <div>
-              <strong style="color: var(--color-primary); font-size: 1.1rem; font-family: var(--font-heading);">HR Email</strong><br>
-              <span style="color: var(--color-text-light); font-size: 1rem;">havenspringllc@gmail.com</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-rounded-wrapper reveal" style="grid-template-columns: 1fr; max-width: 1200px; margin: 0 auto;">
-          <div class="contact-form">
-            <form action="https://formsubmit.co/havenspringllc@gmail.com" method="POST" enctype="multipart/form-data">
-              <input type="hidden" name="_subject" value="New HavenSpring Employment Application">
-              <div class="form-row">
-                <div class="form-group">
-                  <input type="text" name="FullName" class="input-rounded" placeholder="Full Name" required>
-                </div>
-                <div class="form-group">
-                  <input type="tel" name="Phone" class="input-rounded" placeholder="Phone Number" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <input type="email" name="Email" class="input-rounded" placeholder="Email Address" required>
-                </div>
-                <div class="form-group">
-                  <input type="text" name="Position" class="input-rounded" placeholder="Position Applied For" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <input type="text" name="Availability" class="input-rounded" placeholder="Availability (e.g., Full-time, Weekends)" required>
-                </div>
-                <div class="form-group">
-                  <input type="text" name="Experience" class="input-rounded" placeholder="Years of Experience" required>
-                </div>
-              </div>
-              <div class="form-row" style="align-items: center;">
-                <div class="form-group">
-                  <input type="text" name="Certifications" class="input-rounded" placeholder="Certifications (e.g., CNA, CPR, First Aid)">
-                </div>
-                <div class="form-group">
-                  <input type="file" name="Resume" class="input-rounded" accept=".pdf,.doc,.docx">
-                </div>
-              </div>
-              
-              <div class="form-row" style="align-items: start; margin-top: 1rem;">
-                <div class="form-group" style="display: flex; align-items: start; gap: 12px; font-size: 0.95rem; color: #4b5563;">
-                  <input type="checkbox" name="WorkAuthorization" id="workAuth" required style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer;">
-                  <label for="workAuth" style="cursor: pointer;">I am authorized to work in the United States.</label>
-                </div>
-                <div class="form-group" style="display: flex; align-items: start; gap: 12px; font-size: 0.95rem; color: #4b5563;">
-                  <input type="checkbox" name="BackgroundCheck" id="backgroundCheck" required style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer;">
-                  <label for="backgroundCheck" style="cursor: pointer;">I agree to submit to a background check as part of the hiring process.</label>
-                </div>
-              </div>
-
-              <div class="form-row" style="align-items: center; margin-top: 1rem;">
-                <div class="form-group">
-                  <input type="text" name="Signature" class="input-rounded" placeholder="Electronic Signature (Type Full Name)" required>
-                </div>
-                <!-- CAPTCHA Placeholder -->
-                <div class="form-group captcha-placeholder" style="background: #ffffff; padding: 10px 15px; border-radius: 4px; border: 1px solid #d3d3d3; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 0 4px 1px rgba(0,0,0,0.04); background-color: #fafafa; max-width: 100%;">
-                  <div style="display: flex; align-items: center; gap: 10px;">
-                    <input type="checkbox" style="width: 24px; height: 24px; cursor: pointer; accent-color: var(--color-primary); border: 2px solid #c1c1c1; border-radius: 2px;" required>
-                    <span style="font-size: 0.85rem; color: #555; font-family: Roboto, sans-serif;">I'm not a robot</span>
-                  </div>
-                  <div style="display: flex; flex-direction: column; align-items: center;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/200px-RecaptchaLogo.svg.png" alt="reCAPTCHA" style="height: 20px; opacity: 0.8; margin-bottom: 2px;">
-                    <span style="font-size: 0.55rem; color: #999;">reCAPTCHA</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-group checkbox-group" style="display: flex; align-items: start; gap: 12px; margin-top: 1rem; margin-bottom: 2rem;">
-                <input type="checkbox" id="sms_consent" name="sms_consent" value="yes" style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer; flex-shrink: 0;">
-                <label for="sms_consent" style="font-size: 0.85em; color: #6b7280; line-height: 1.5; cursor: pointer;">By checking this box, you agree to receive SMS messages from HavenSpring LLC related to inquiries, services, or updates. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance.</label>
-              </div>
-
-              <button type="submit" class="btn-primary magnetic" style="width: 100%;">Submit Application</button>
-            </form>
+          <div class="reveal" style="background: #ffffff; padding: 3rem; border-radius: 20px; box-shadow: var(--shadow-soft);">
+            <h2 class="section-title text-left" style="font-size: 1.8rem; margin-bottom: 2rem;">Why Join Us?</h2>
+            <ul style="list-style: none; padding: 0;">
+              <li style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 1.5rem;">
+                <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; color: var(--color-accent); flex-shrink: 0;" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span style="font-size: 1.1rem; color: var(--color-text);">Competitive compensation and benefits.</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 1.5rem;">
+                <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; color: var(--color-accent); flex-shrink: 0;" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span style="font-size: 1.1rem; color: var(--color-text);">Flexible scheduling to support work-life balance.</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 1.5rem;">
+                <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; color: var(--color-accent); flex-shrink: 0;" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span style="font-size: 1.1rem; color: var(--color-text);">Ongoing professional development and training.</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 15px;">
+                <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; color: var(--color-accent); flex-shrink: 0;" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span style="font-size: 1.1rem; color: var(--color-text);">A supportive, inclusive, and rewarding family environment.</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- CAREERS SECTION (CONTACT INFO + FORM) -->
+    <section id="careers" class="mobile-pad-50 section-padding bg-warm-white" style="padding-top: 2rem !important;">
+      <div class="container-1700">
+
+        <div class="contact-rounded-wrapper reveal" style="grid-template-columns: 1fr; max-width: 1000px; margin: 0 auto; background: #ffffff; padding: 3rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+          
+          <div id="application-success-msg" style="display: none; text-align: center; padding: 3rem 1rem;">
+            <div style="width: 80px; height: 80px; border-radius: 50%; background: #E8F5E9; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#2A4B3A" stroke-width="2" style="width: 40px; height: 40px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <h2 style="font-family: var(--font-heading); color: var(--color-primary); font-size: 2rem; margin-bottom: 1rem;">Application Submitted Successfully</h2>
+            <p style="color: var(--color-text-light); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Thank you for your interest in joining HavenSpring LLC. Our HR department has received your application and will review your qualifications. We will contact you soon regarding the next steps.</p>
+          </div>
+
+          <div class="contact-form" id="application-form-container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+              <h2 style="font-family: var(--font-heading); color: var(--color-primary); font-size: 2rem; margin-bottom: 0.5rem;">Employment Application</h2>
+              <p style="color: var(--color-text-light);">Please complete all required fields below to apply.</p>
+            </div>
+            
+            <!-- AJAX form handler integrated in script2.js -->
+            <form id="careersForm" action="https://formsubmit.co/careers@havenspring.com" method="POST" enctype="multipart/form-data">
+              <input type="hidden" name="_subject" value="New HavenSpring Employment Application">
+              <input type="hidden" name="_captcha" value="false"> <!-- Disabling formsubmit default captcha because we use AJAX and Google ReCaptcha -->
+
+              <fieldset style="border: none; margin-bottom: 2rem; padding: 0;">
+                <legend class="form-section-title">Personal Information</legend>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="FullName" class="sr-only">Full Name</label>
+                    <input type="text" id="FullName" name="FullName" class="input-rounded" placeholder="Full Name *" required aria-required="true">
+                  </div>
+                  <div class="form-group">
+                    <label for="Phone" class="sr-only">Phone Number</label>
+                    <input type="tel" id="Phone" name="Phone" class="input-rounded" placeholder="Phone Number *" pattern="[0-9\-\+\s\(\)]+" required aria-required="true">
+                  </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                  <div class="form-group" style="width: 100%;">
+                    <label for="Email" class="sr-only">Email Address</label>
+                    <input type="email" id="Email" name="Email" class="input-rounded" placeholder="Email Address *" required aria-required="true">
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset style="border: none; margin-bottom: 2rem; padding: 0;">
+                <legend class="form-section-title">Employment Details</legend>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="Position" class="sr-only">Position Applied For</label>
+                    <input type="text" id="Position" name="Position" class="input-rounded" placeholder="Position Applied For *" required aria-required="true">
+                  </div>
+                  <div class="form-group">
+                    <label for="Availability" class="sr-only">Availability</label>
+                    <input type="text" id="Availability" name="Availability" class="input-rounded" placeholder="Availability (e.g., Full-time, Weekends) *" required aria-required="true">
+                  </div>
+                </div>
+                <div class="form-row" style="align-items: center;">
+                  <div class="form-group">
+                    <label for="Experience" class="sr-only">Years of Experience</label>
+                    <input type="number" id="Experience" name="Experience" class="input-rounded" placeholder="Years of Experience *" min="0" required aria-required="true">
+                  </div>
+                  <div class="form-group">
+                    <label for="Certifications" class="sr-only">Certifications</label>
+                    <input type="text" id="Certifications" name="Certifications" class="input-rounded" placeholder="Certifications (e.g., CNA, CPR) (Optional)">
+                  </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                  <div class="form-group" style="width: 100%;">
+                    <label for="Resume" style="display: block; margin-bottom: 0.5rem; font-size: 0.95rem; color: #4b5563;">Upload Resume / Cover Letter (Optional)</label>
+                    <input type="file" id="Resume" name="Resume" class="input-rounded" accept=".pdf,.doc,.docx" style="padding: 12px 15px;">
+                  </div>
+                </div>
+              </fieldset>
+              
+              <fieldset style="border: none; margin-bottom: 2.5rem; padding: 0;">
+                <legend class="form-section-title">Consent & Legal Validation</legend>
+                
+                <div class="checkbox-group form-consent-row">
+                  <input type="checkbox" name="WorkAuthorization" id="workAuth" required aria-required="true">
+                  <label for="workAuth">I am authorized to work in the United States.</label>
+                </div>
+                
+                <div class="checkbox-group form-consent-row">
+                  <input type="checkbox" name="BackgroundCheck" id="backgroundCheck" required aria-required="true">
+                  <label for="backgroundCheck">I agree to submit to a background check as part of the hiring process.</label>
+                </div>
+
+                <div class="checkbox-group form-consent-row">
+                  <input type="checkbox" name="PrivacyTerms" id="privacyTerms" required aria-required="true">
+                  <label for="privacyTerms">I have read and agree to the <a href="privacy.html" style="color: var(--color-accent); text-decoration: underline;">Privacy Policy</a> and <a href="terms.html" style="color: var(--color-accent); text-decoration: underline;">Terms & Conditions</a>.</label>
+                </div>
+
+                <div class="checkbox-group form-consent-row">
+                  <input type="checkbox" id="sms_consent" name="sms_consent" value="yes">
+                  <label for="sms_consent"><strong>(Optional)</strong> By checking this box, you agree to receive SMS messages from HavenSpring LLC related to interviews or inquiries. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance.</label>
+                </div>
+
+                <div class="form-row" style="align-items: center; margin-top: 1.5rem; gap: 20px;">
+                  <div class="form-group" style="flex: 1;">
+                    <label for="Signature" class="sr-only">Electronic Signature</label>
+                    <input type="text" id="Signature" name="Signature" class="input-rounded" placeholder="Electronic Signature (Type Full Name) *" required aria-required="true">
+                  </div>
+                  
+                  <!-- Proper Google reCAPTCHA v2 Widget (using official test key) -->
+                  <div class="form-group" style="flex: 1;">
+                    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div style="font-size: 0.85rem; color: #6b7280; margin-bottom: 1rem; text-align: center;">
+                <em>Your information is securely encrypted and used strictly for the purpose of application review in compliance with local regulations.</em>
+              </div>
+
+              <button type="submit" id="submitBtn" class="btn-primary magnetic" style="width: 100%; font-size: 1.1rem; padding: 16px;">Submit Secure Application</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- 8. FOOTER (CURVED TOP DESIGN) -->
@@ -176,7 +234,7 @@
         <div class="footer-brand">
           <p><a href="index2.html" style="color: #ffffff !important; text-decoration: none;">HavenSpring LLC</a></p>
           <p>469 Dutton Avenue, WI 54304</p>
-          <p>Email: <a href="mailto:havenspringllc@gmail.com">havenspringllc@gmail.com</a></p>
+          <p>Email: <a href="mailto:careers@havenspring.com">careers@havenspring.com</a></p>
           <p>Phone: <a href="tel:414-455-5899">414-455-5899</a></p>
         </div>
         <div class="footer-links-col">
@@ -199,6 +257,9 @@
   <script src="script2.js"></script>
 </body>
 </html>
+
+
+
 
 
 
