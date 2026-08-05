@@ -1,4 +1,4 @@
-﻿$files = Get-ChildItem -Filter *.html
+$files = Get-ChildItem -Filter *.html
 
 $newFooter = @"
   <!-- NEW COMPLIANT FOOTER PLACEHOLDER -->
@@ -6,7 +6,7 @@ $newFooter = @"
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <p>HavenSpring LLC</p>
+          <p><a href="index2.html" style="color: #ffffff !important; text-decoration: none;">HavenSpring LLC</a></p>
           <p>469 Dutton Avenue, WI 54304</p>
           <p>Email: <a href="mailto:havenspringllc@gmail.com">havenspringllc@gmail.com</a></p>
           <p>Phone: <a href="tel:414-455-5899">414-455-5899</a></p>
