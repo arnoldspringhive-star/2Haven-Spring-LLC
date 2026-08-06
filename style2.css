@@ -3155,7 +3155,7 @@ input[type="file"].input-rounded::file-selector-button:hover {
   h3 { font-size: 2rem !important; }
   
   /* Global Spacing */
-  .section-padding { padding: 5rem 5% !important; }
+  .section-padding { padding: 5rem 0 !important; }
   .container-1700 { padding: 0 4%; }
   
   /* Header Adjustments */
@@ -3182,7 +3182,7 @@ input[type="file"].input-rounded::file-selector-button:hover {
   .hero-description { font-size: 16px !important; }
   
   /* Global Spacing */
-  .section-padding { padding: 3.5rem 5% !important; }
+  .section-padding { padding: 3.5rem 0 !important; }
   
   /* Header & Mobile Menu Navigation */
   .hamburger { 
