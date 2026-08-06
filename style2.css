@@ -2475,7 +2475,7 @@ input[type="file"].input-rounded::file-selector-button:hover {
 }
 
 @media (max-width: 1024px) {
-  .reference-about-hero { flex-direction: column; gap: 4rem; }
+  .reference-about-hero { flex-direction: column; gap: 4rem; margin: 50px auto; }
   .reference-pillars-row { flex-wrap: wrap; gap: 3rem; }
   .reference-process-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
 }
