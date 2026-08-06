@@ -3099,6 +3099,24 @@ input[type="file"].input-rounded::file-selector-button:hover {
   margin-bottom: 1rem;
   line-height: 1.3;
 }
+
+/* Ensure 5 pillars fit on one line on laptops */
+@media (max-width: 1400px) and (min-width: 1025px) {
+  .reference-pillars-row {
+    gap: 1vw;
+    flex-wrap: nowrap;
+  }
+  .reference-pillar-item {
+    width: 180px;
+  }
+  .reference-pillar-img {
+    width: 180px;
+    height: 180px;
+  }
+  .reference-pillars-row::before {
+    top: 90px;
+  }
+}
 .privacy-card p {
   color: #555555;
   line-height: 1.7;
