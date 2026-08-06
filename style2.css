@@ -3107,14 +3107,14 @@ input[type="file"].input-rounded::file-selector-button:hover {
     flex-wrap: nowrap;
   }
   .reference-pillar-item {
-    width: 180px;
+    width: 200px;
   }
   .reference-pillar-img {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
   .reference-pillars-row::before {
-    top: 90px;
+    top: 100px;
   }
 }
 .privacy-card p {
