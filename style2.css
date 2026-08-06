@@ -3216,14 +3216,7 @@ input[type="file"].input-rounded::file-selector-button:hover {
   }
   
   /* Immersive Header Fixes */
-  .about-immersive-content { 
-    padding: 0 10%; 
-  }
-  .about-immersive-content .hero-description {
-    max-width: 280px;
-    margin: 0 auto;
-    font-size: 14px !important;
-  }
+  .about-immersive-content { padding: 0 5%; }
   /* --- Mobile Hero Typography Fixes --- */
   .text-green { font-size: 1.7rem !important; } .text-blue { font-size: 2.2rem !important; }
   .text-script { 
