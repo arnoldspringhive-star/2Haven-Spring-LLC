@@ -6,7 +6,9 @@ $newFooter = @"
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <p><a href="index2.html" style="color: #ffffff !important; text-decoration: none;">HavenSpring LLC</a></p>
+          <a href="index2.html" style="display: inline-block; margin-bottom: 15px;">
+            <img src="assets/logo1.png" alt="HavenSpring Logo" style="height: 110px; width: auto; object-fit: contain;">
+          </a>
           <p>469 Dutton Avenue, WI 54304</p>
           <p>Email: <a href="mailto:havenspringllc@gmail.com">havenspringllc@gmail.com</a></p>
           <p>Phone: <a href="tel:414-455-5899">414-455-5899</a></p>
