@@ -2214,3 +2214,8 @@ textarea.form-control {
 .premium-cta-banner {
   padding-bottom: 0 !important;
 }
+
+/* --- Enforce 16px Base Font Size Globally --- */
+html, body {
+  font-size: 16px !important;
+}
