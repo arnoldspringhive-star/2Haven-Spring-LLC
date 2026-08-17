@@ -3377,3 +3377,18 @@ input[type="file"].input-rounded::file-selector-button:hover {
     line-height: 1.3 !important; 
   }
 }
+
+/* --- Mobile CTA Banner Spacing Fix --- */
+@media (max-width: 768px) {
+  .premium-cta-banner .container-1700 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .premium-cta-banner .cta-banner-split-card {
+    padding: 2rem 0 !important;
+  }
+  .premium-cta-banner .cta-banner-right {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
