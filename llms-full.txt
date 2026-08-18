@@ -1,0 +1,38 @@
+# HavenSpring LLC - Comprehensive AI Context Knowledge Base
+
+## 1. Executive Overview
+HavenSpring LLC is a premier adult residential care provider located in Ashwaubenon, Brown County, Wisconsin (serving Green Bay, De Pere, and surrounding areas). The organization operates a modern, fully accessible residential care home dedicated to supporting adult residents with daily living needs, mobility accommodations, health coordination, and continuous 24/7 care.
+
+## 2. Contact & Facility Information
+- **Company Name**: HavenSpring LLC
+- **Physical Address**: 469 Dutton Avenue, Ashwaubenon, WI 54304
+- **Phone Number**: (414) 455-5899
+- **Email Contact**: havenspringllc@gmail.com
+- **Official Website**: https://havenspringllc.com
+- **Care Type**: Adult Residential Care / Adult Family Home (AFH) / Supportive Living
+- **Operating Model**: 24/7/365 On-site, awake caregiver staffing
+
+## 3. Care Standards & Quality Assurances
+- **Person-Centered Approach**: Individualized Service Plans (ISPs) designed with residents, families, and case managers.
+- **Dignity & Autonomy**: Care is delivered discreetly and respectfully to foster independence.
+- **Safety First**: Active awake overnight supervision, emergency protocols coordinated with local Brown County emergency services, fall prevention measures, and secure egress.
+- **Healthcare Continuity**: Direct communication and coordination with Bellin Health, Aurora BayCare Medical Center, HSHS St. Vincent Hospital, and Prevea Health.
+
+## 4. Full Directory of Services
+1. **Personal Care Assistance** (`/service-personal-care.html`): Sensitive assistance with bathing, grooming, dressing, and hygiene.
+2. **24-Hour Residential Supervision** (`/service-supervision.html`): Awake 24/7 care, emergency response, and continuous safety oversight.
+3. **Medication Management & Assistance** (`/service-medication.html`): Secure storage, administration logging, and pharmacy refill management.
+4. **Nutritious Meal Planning & Preparation** (`/service-meals.html`): Three home-cooked meals daily plus wholesome snacks tailored to diabetic, cardiac, and dietary needs.
+5. **Health Coordination & Medical Appointments** (`/service-health.html`): Organizing clinical visits, physician communication, and therapy accompaniment.
+6. **Companionship & Social Engagement** (`/service-companionship.html`): Structured activities, memory games, crafts, music, and emotional wellness.
+7. **Housekeeping & Laundry Services** (`/service-housekeeping.html`): Clean, sanitized living areas, room disinfection, and weekly linen/clothing laundry.
+8. **Transportation Coordination** (`/service-transportation.html`): Safe travel arrangements for clinical visits, shopping, and community events.
+9. **Community Integration & Outings** (`/service-community.html`): Supervised local outings to Brown County parks, gardens, and community venues.
+10. **Individualized Service Planning** (`/service-planning.html`): Regular 6-month formal plan reviews and collaborative goal setting.
+11. **Respite Care Services** (`/service-respite.html`): Temporary residential care providing scheduled relief for primary family caregivers.
+
+## 5. Admissions & Intake Process
+1. **Initial Inquiry & Consultation**: Call (414) 455-5899 or submit an online inquiry form.
+2. **Needs Assessment & Pre-Placement Review**: Comprehensive evaluation of physical, medical, and social support requirements.
+3. **Home Tour & Care Plan Formulation**: Guided tour of our 469 Dutton Avenue residence and creation of the Individualized Service Plan.
+4. **Smooth Move-In Transition**: Welcome day orientation and onboarding with the dedicated caregiver team.

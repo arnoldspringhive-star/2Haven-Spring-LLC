@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://havenspringllc.com/sitemap.xml

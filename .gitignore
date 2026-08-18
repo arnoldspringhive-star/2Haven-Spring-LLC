@@ -11,12 +11,19 @@ Thumbs.db
 # External skill repositories & packages
 awesome-design-skills-main/
 
+# SEO audit reports (local reference only)
+*-audit/
+havenspringllc-audit/
+
 # Documentation and scratch files
 *.docx
 *.pdf
 *.txt
 *.ps1
 *.sh
+!robots.txt
+!llms.txt
+!llms-full.txt
 
 # Node / dependencies if added later
 node_modules/
