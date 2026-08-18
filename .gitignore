@@ -8,6 +8,9 @@ Thumbs.db
 *.swp
 *.swo
 
+# External skill repositories & packages
+awesome-design-skills-main/
+
 # Documentation and scratch files
 *.docx
 *.pdf
