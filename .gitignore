@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Documentation and scratch files
+*.docx
+*.pdf
+*.txt
+*.ps1
+*.sh
+
+# Node / dependencies if added later
+node_modules/
+dist/
+build/
