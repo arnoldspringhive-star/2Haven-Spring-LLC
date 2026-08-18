@@ -123,7 +123,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding-left: 10%;
   overflow: hidden;
   text-align: center;
-  background: linear-gradient(to right, rgba(20, 30, 40, 0.4) 0%, rgba(20, 30, 40, 0) 60%), url('assets/2hero.png') no-repeat top right / cover;
+  background: linear-gradient(to right, rgba(20, 30, 40, 0.4) 0%, rgba(20, 30, 40, 0) 60%), url('assets/2hero.webp') no-repeat top right / cover;
 }
 
 @keyframes circleRipple {
@@ -301,7 +301,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .process-section-bg {
-  background-image: linear-gradient(rgba(20, 40, 30, 0.85), rgba(20, 40, 30, 0.85)), url('assets/premium_hero_bg.png');
+  background-image: linear-gradient(rgba(20, 40, 30, 0.85), rgba(20, 40, 30, 0.85)), url('assets/premium_hero_bg.webp');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -2022,7 +2022,7 @@ input[type="file"].input-rounded::file-selector-button:hover {
 /* 1. Immersive Hero */
 .about-immersive-hero { position: relative; padding-top: 50px;
   height: 60vh; min-height: 450px;
-  background: url('assets/hero_bg.png') center/cover no-repeat;
+  background: url('assets/hero_bg.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2061,7 +2061,7 @@ input[type="file"].input-rounded::file-selector-button:hover {
 
 .mission-split-img {
   flex: 1;
-  background: url('assets/about_mission_main.png') center/cover no-repeat;
+  background: url('assets/about_mission_main.webp') center/cover no-repeat;
 }
 
 .mission-split-content {
