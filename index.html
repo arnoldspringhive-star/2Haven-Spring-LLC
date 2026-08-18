@@ -3,167 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HavenSpring LLC | Compassionate Residential Care Provider</title>
+  <title>HavenSpring LLC | Compassionate Adult Residential Care</title>
   
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="HavenSpring LLC is a premier residential care provider offering a safe, welcoming, and supportive home with compassionate, person-centered care that promotes dignity and independence.">
-  <meta name="keywords" content="HavenSpring, residential care, elderly homecare, senior living, caregiver, Ashwaubenon senior care, Wisconsin homecare, group home">
-  <meta name="author" content="HavenSpring LLC">
+  <!-- Google Fonts: Playfair Display for Headings, Poppins for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://havenspringllc.com/">
-  <meta property="og:title" content="HavenSpring LLC | Compassionate Residential Care">
-  <meta property="og:description" content="A Safe Home. Compassionate Care. A Brighter Tomorrow. Person-centered residential care designed for comfort, dignity, and independence.">
-  <meta property="og:image" content="assets/hero_bg.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232C5E43%22/><path d=%22M50 25 L25 50 H35 V75 H65 V50 H75 Z%22 fill=%22%23ffffff%22/><path d=%22M50 25 C50 25, 62 38, 62 48 C62 55, 56 60, 50 60 Z%22 fill=%22%23C5A862%22/></svg>">
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="header" id="header">
-    <div class="container">
+    <div class="container-1700 header-container">
       <a href="index2.html" class="logo">
         <img src="assets/logo1.png" alt="HavenSpring Logo" style="height: 100px; width: auto; object-fit: contain;">
       </a>
 
-      <!-- Desktop Navigation Menu -->
-      <nav aria-label="Main Navigation">
+      <div class="hamburger" id="hamburger-menu" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#services" class="nav-link">Facilities</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#why-choose-us" class="nav-link">Blog</a></li>
-          <li><a href="#why-choose-us" class="nav-link">Gallery</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="index2.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="who-we-serve.html">Who We Serve</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="admissions.html">Admissions and Referrals</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
 
-      <!-- CTA Button & Hamburger Toggle -->
-      <div class="header-btn">
-        <a href="contact.html" class="btn btn-chartreuse">Book A Free Consultation</a>
-      </div>
-
-      <button class="hamburger" id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <a href="contact.html" class="btn-primary magnetic">Request Information</a>
     </div>
   </header>
 
     <main>
-    <!-- HERO / INTRO SECTION (2-3 paragraphs) -->
-    <section id="home" class="mobile-pad-50 hero">
-      <div class="hero-bg-static" style="background-image: url('assets/hero_static_bg.png');" role="img" aria-label="Caregiver and senior resident in a cozy sunlit room"></div>
-      <div class="hero-overlay-gradient"></div>
-
-      <div class="hero-content-container">
-        <div class="hero-text-content fade-in-up">
-          <div class="hero-pill-badge">
-            <span class="badge-heart-icon">
-              <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-            </span>
-            <span>Thoughtful Care Planning ï¿½ For Ashwaubenon & Green Bay</span>
+    <!-- 1. HERO SECTION (CIRCULAR FOCUS) -->
+    <section id="home" class="hero-circular">
+            <div class="hero-center-circle reveal">
+            <h1 class="hero-title">
+              <span class="text-green">A Place to Feel at Home.</span><br>
+              <span class="text-blue">Compassionate Care.</span><br>
+              <span class="text-script">A Brighter Tomorrow.</span>
+            </h1>
+            <div class="hero-divider">
+              <span class="line"></span>
+              <svg viewBox="0 0 24 24" class="heart-icon" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span class="line"></span>
+            </div>
+            <p class="hero-subtext">HavenSpring is being developed to offer a supportive and structured living environment where individuals may feel comfortable and respected.</p>
+            <div class="hero-actions">
+              <a href="about.html" class="btn-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                Learn More About Us
+              </a>
+              <a href="contact.html" class="btn-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                Schedule a Visit
+              </a>
+            </div>
           </div>
 
-          <h1 class="hero-heading">
-            Developing Supportive Environments for Your <span class="serif-italic">Loved One</span>
-          </h1>
-          
-          <p class="hero-paragraph">
-            HavenSpring is being developed to offer safe and person-centered residential care. Our planned services aim to focus on personalized support and creating peace of mind.
-          </p>
-          <p class="hero-paragraph" style="margin-top: 15px;">
-            We aim to create a peaceful, respect-filled environment where residents feel valued. Our goal is to meet individual needs while encouraging personal choice and community participation.
-          </p>
-          
-          <div class="hero-cta-group">
-            <a href="contact.html" class="btn btn-chartreuse-pill">
-              <span>Contact Us</span>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-          </div>
-        </div>
+    </section>
+
+    <!-- 1.5. WELCOME SECTION -->
+    <section class="section-padding bg-warm-white mobile-text-left" style="text-align: center;">
+      <div class="container-1700" style="max-width: 1140px; margin: 0 auto;">
+        <div class="premium-badge">Welcome Message</div>
+        <h2 style="font-size: 3.2rem; color: #3a523b; margin-top: 10px; margin-bottom: 25px; font-family: 'Playfair Display', serif;">Welcome to HavenSpring LLC</h2>
+        <p style="font-size: 1.15rem; line-height: 1.8; color: var(--color-text); margin-bottom: 20px;">
+          Welcome to HavenSpring LLC. Our goal is to develop a residential environment where adults may experience thoughtful, individualized support within a comfortable and structured setting. We aim to support each person's dignity, independence, personal choice, and connection with family and community.
+        </p>
+        <p style="font-size: 1.15rem; line-height: 1.8; color: var(--color-text); margin-bottom: 20px;">
+          Our intended approach includes working collaboratively with individuals, families, guardians, care managers, healthcare professionals, and referral partners to help shape person-centered support plans based on each individual's unique needs, abilities, preferences, and goals.
+        </p>
+        <p style="font-size: 1.15rem; line-height: 1.8; color: var(--color-text);">
+          At HavenSpring, our vision extends beyond housing - we are striving to create a setting that feels stable, respectful, and truly like home.
+        </p>
       </div>
     </section>
 
-    <!-- SHORT PREVIEW OF SERVICES -->
-    <section id="services" class="mobile-pad-50 services section-padding reveal">
+    <!-- 2. OUR SERVICES (GRID LAYOUT) -->
+    <section id="services" class="services-section section-padding">
+      <div class="services-bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
       <div class="container">
-        <div class="section-header">
-          <span class="section-subtitle">Our Intended Services</span>
-          <h2 class="section-title">Supportive Care Plans</h2>
-          <p class="section-desc">We aim to offer a range of supportive services tailored to meet individual daily requirements while fostering comfort.</p>
+        <div class="section-header text-center reveal" style="text-align: center; margin-bottom: 4rem; max-width: 1140px; margin-left: auto; margin-right: auto;">
+          <div class="premium-badge">Our Services</div>
+          <h2 style="font-size: 3.2rem; color: #3a523b; margin-top: 0;">Comprehensive Care Planning</h2>
+          <div class="hero-divider" style="margin: 1.5rem auto;">
+            <span class="line" style="width: 60px;"></span>
+            <svg viewBox="0 0 24 24" class="heart-icon" fill="currentColor" style="width: 18px; height: 18px;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span class="line" style="width: 60px;"></span>
+          </div>
+          <p style="font-size: 1.1rem; color: var(--color-text-light); max-width: 900px; margin: 0 auto; line-height: 1.7;">
+            Our services are intended to be safe, supportive, and thoughtfully personalized to meet individual needs. From daily living assistance to continuous support, our goal is to foster a warm environment where residents can live with dignity.
+          </p>
         </div>
-
-        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="services-grid reveal">
+          
           <!-- Service 1 -->
           <div class="service-card">
-            <h3 style="margin-bottom:10px; font-size:1.4rem;">24-Hour Supervision</h3>
-            <p>Supportive supervision and assistance to promote comfort, peace of mind, and immediate safety.</p>
-            <a href="service-supervision.html" class="btn-more">Learn More</a>
+            <div class="service-img">
+              <img src="assets/service_photo_1_green.png" alt="Personal Care">
+            </div>
+            <div class="service-circle">
+              <h4>Personal Care Assistance</h4>
+              <p>Thoughtful and respectful support with daily living activities, aiming to preserve independence.</p>
+              <a href="service-personal-care.html" class="btn-text">Read more &rarr;</a>
+            </div>
           </div>
+          
           <!-- Service 2 -->
           <div class="service-card">
-            <h3 style="margin-bottom:10px; font-size:1.4rem;">Personal Care Assistance</h3>
-            <p>Empathetic help with bathing, dressing, and daily living routines while protecting personal dignity.</p>
-            <a href="service-personal-care.html" class="btn-more">Learn More</a>
+            <div class="service-img">
+              <img src="assets/service_photo_2_green.png" alt="Companionship">
+            </div>
+            <div class="service-circle">
+              <h4>Companionship & Social</h4>
+              <p>Planning for a vibrant atmosphere that fosters joyful interactions and engaging activities.</p>
+              <a href="service-companionship.html" class="btn-text">Read more &rarr;</a>
+            </div>
           </div>
+          
           <!-- Service 3 -->
           <div class="service-card">
-            <h3 style="margin-bottom:10px; font-size:1.4rem;">Medication Management</h3>
-            <p>Timely medication reminders and management support in adherence with healthcare plan directives.</p>
-            <a href="service-medication.html" class="btn-more">Learn More</a>
+            <div class="service-img">
+              <img src="assets/service_photo_3_green.png" alt="Medication">
+            </div>
+            <div class="service-circle">
+              <h4>Medication Management</h4>
+              <p>Intended secure organization of medications to maintain consistent and stress-free health routines.</p>
+              <a href="service-medication.html" class="btn-text">Read more &rarr;</a>
+            </div>
           </div>
+          
           <!-- Service 4 -->
           <div class="service-card">
-            <h3 style="margin-bottom:10px; font-size:1.4rem;">Nutritious Meal Prep</h3>
-            <p>Freshly prepared, balanced meals cooked daily, matching dietary requirements and preferences.</p>
-            <a href="service-meals.html" class="btn-more">Learn More</a>
+            <div class="service-img">
+              <img src="assets/service_photo_4_green.png" alt="24/7 Live-In">
+            </div>
+            <div class="service-circle">
+              <h4>24-Hour Supervision</h4>
+              <p>Aiming to provide peace of mind with continuous staffing and assistance available day or night.</p>
+              <a href="service-supervision.html" class="btn-text">Read more &rarr;</a>
+            </div>
           </div>
         </div>
-        <div style="text-align: center; margin-top: 30px;">
-          <a href="services.html" class="btn btn-chartreuse-pill">View All Services</a>
-        </div>
       </div>
     </section>
 
-    <!-- SHORT WHO WE MAY SERVE -->
-    <section id="who-we-serve" class="mobile-pad-50 about section-padding reveal bg-warm-white">
-      <div class="container" style="text-align: center;">
-        <span class="section-subtitle">Who We May Serve</span>
-        <h2 class="section-title">An Inclusive Community</h2>
-        <div class="section-title-divider" style="margin: 0 auto 2rem auto;"></div>
-        <p class="about-intro-text" style="max-width: 800px; margin: 0 auto;">
+    <!-- 3. SHORT WHO WE MAY SERVE -->
+    <section class="section-padding bg-warm-white mobile-text-left" style="text-align: center;">
+      <div class="container-1700" style="max-width: 900px; margin: 0 auto;">
+        <div class="premium-badge">Who We Serve</div>
+        <h2 style="font-size: clamp(1.8rem, 5vw, 3.2rem); white-space: nowrap; color: #3a523b; margin-top: 10px; margin-bottom: 25px; font-family: 'Playfair Display', serif;">An Inclusive Community</h2>
+        <p style="font-size: 1.15rem; line-height: 1.8; color: var(--color-text); margin-bottom: 30px;">
           HavenSpring is being developed as a welcoming environment for adults (18+) who may require supportive residential care. We are thoughtfully designing our community to embrace diversity and promote well-being for adults with specific support needs, subject to assessment and availability.
         </p>
-        <div class="about-cta" style="margin-top: 2rem;">
-          <a href="who-we-serve.html" class="btn btn-chartreuse-pill">Learn More About Who We Serve</a>
-        </div>
+        <a href="who-we-serve.html" class="btn-primary magnetic">Learn More About Who We Serve</a>
       </div>
     </section>
 
-    <!-- CALL TO ACTION (CONTACT) -->
-    <section id="contact" class="mobile-pad-50 premium-cta-banner reveal">
+    <!-- 4. CALL TO ACTION (CONTACT) -->
+    <section id="contact" class="premium-cta-banner reveal">
       
-      <div class="container cta-banner-content">
+      <div class="container-1700 cta-banner-content">
         <div class="cta-banner-split-card">
           <div class="cta-banner-left">
-            <div class="premium-badge" style="margin-bottom: 2rem;">Get In Touch</div>
-            <h2 class="cta-banner-title" style="text-align: left;">Contact Us</h2>
-            <div class="section-title-divider" style="margin: 1.5rem 0; justify-content: flex-start;"></div>
-            <p class="cta-banner-desc" style="text-align: left; margin-left: 0;">
+            <div class="premium-badge">Get In Touch</div>
+            <h2 class="cta-banner-title" style="text-align: left; margin-top: 10px; margin-bottom: 25px;">Contact Us</h2>
+            <div class="hero-divider" style="margin: 0 0 25px 0; justify-content: flex-start;">
+              <span class="line" style="width: 40px; background: rgba(95, 142, 68, 0.5);"></span>
+              <svg viewBox="0 0 24 24" class="heart-icon" fill="#5F8E44" style="width: 16px; height: 16px;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span class="line" style="width: 40px; background: rgba(95, 142, 68, 0.5);"></span>
+            </div>
+            <p class="cta-banner-desc" style="text-align: left; margin-left: 0; margin-bottom: 30px;">
               Reach out with questions about our intended home, services, and development timeline. We are here to assist your family.
             </p>
-            <div style="text-align: left; margin-top: 2rem;">
-              <a href="tel:414-455-5899" class="btn btn-primary magnetic">Call 414-455-5899</a>
+            <div style="text-align: left;">
+              <a href="tel:414-455-5899" class="btn-primary magnetic">Call 414-455-5899</a>
             </div>
           </div>
           
@@ -181,11 +207,11 @@
               <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" style="margin-top: 15px; margin-bottom: 15px;"></div>
               
               <div class="form-checkbox">
-                <input type="checkbox" id="sms_consent_cta_1" name="sms_consent" value="yes">
-                <label for="sms_consent_cta_1">By checking this box, you agree to receive SMS messages from HavenSpring LLC related to inquiries, services, or updates. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance.</label>
+                <input type="checkbox" id="sms_consent_cta" name="sms_consent" value="yes">
+                <label for="sms_consent_cta">By checking this box, you agree to receive SMS messages from HavenSpring LLC related to inquiries, services, or updates. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out or HELP for assistance.</label>
               </div>
               
-              <button type="submit" class="btn btn-chartreuse magnetic" style="width: 100%; border-radius: 8px; margin-top: 10px; padding: 15px 0; font-size: 1.1rem; border: none; cursor: pointer;">Send Inquiry Message</button>
+              <button type="submit" class="btn-primary magnetic" style="width: 100%; border-radius: 8px; margin-top: 10px; padding: 15px 0; font-size: 1.1rem;">Send Inquiry Message</button>
             </form>
           </div>
         </div>
@@ -193,6 +219,12 @@
     </section>
   </main>
 
+  <!-- 8. FOOTER (CURVED TOP DESIGN) -->
+  <div class="footer-curve">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,120 C480,0 960,0 1440,120 L1440,120 L0,120 Z" fill="#3a523b" />
+    </svg>
+  </div>
     <!-- NEW COMPLIANT FOOTER PLACEHOLDER -->
   <footer class="footer">
     <div class="container">
@@ -222,10 +254,10 @@
     </div>
   </footer>
 
-  <!-- Script file -->
-  <script src="script.js"></script>
+  <script src="script2.js"></script>
 </body>
 </html>
+
 
 
 
